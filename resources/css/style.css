@@ -1,0 +1,457 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4e4e4e;
+  line-height: 1.5em;
+}
+
+span {
+  line-height: 1.5em;
+}
+
+/* Set fonts for headers */
+
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3.25rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+/* Format Header and nav bar */
+
+header {
+  height: 4rem;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: auto 1.5rem;
+  align-items: center;
+}
+
+#nameBold {
+  font-weight: 700;
+  color: #F08813;
+}
+
+header img {
+  height: 3rem;
+  vertical-align: middle;
+}
+
+header span {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin: 1rem auto;
+}
+
+header ul {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 1rem;
+
+}
+
+header a {
+  text-decoration: none;
+  color: #F08813;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Link Hover */
+
+a:hover, #information .txtContainer a:hover {
+  color: #944E00;
+}
+
+/* Section Container */
+
+.secContainer {
+  padding: 2rem 0rem;
+}
+
+.contentSansHeader {
+  margin-top: 32px;
+}
+
+
+/* Flex bootstap */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Formats the main element in jumbotron, information and thesis sections */
+
+.leftSide {
+  width: 60%;
+  padding: 0px 24px;
+  box-sizing:border-box;
+
+}
+
+.leftSide img, .leftSide video {
+  width: 100%;
+}
+
+/* Rightside column */
+
+.smallContent .txtContainer {
+  width: 60%;
+}
+
+.rightSide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rightSide .txtContainer {
+  padding-left: 16px;
+  box-sizing:border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Formats the smaller side sections in information and thesis sections */
+
+.rightSide  {
+  width: 40%;
+}
+
+.rightSide .imgContainer {
+  width: 35%;
+}
+
+.smallContent {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.smallContent:nth-child(1n+2) {
+  padding-top: 16px;
+}
+
+/* Jumbotron Section */
+
+#jumbotron {
+  background-color: #C8B49E;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#jumbotron h3 {
+  margin: 1.5rem 0;
+}
+
+#btn {
+  background-color: #F08813;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#btn:hover {
+  background-color: #944E00;
+  transition-duration: 1s;
+
+}
+
+#btn h4 {
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+}
+
+#btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.cta {
+  margin: auto 0;
+  max-width: 31%;
+}
+
+/* Consistent Margins Above and Below h2s except margin-bottom within main section of information section therefore negative margin used there instead */
+
+h2 {
+  margin: 32px 0;
+}
+
+/* Information Section */
+
+#information h2 {
+  margin-bottom: 24px;
+}
+
+#information span {
+  display: inline-block;
+}
+
+#quotee {
+  margin-top: 32px;
+}
+
+#information .txtContainer span:first-of-type {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#information .txtContainer a {
+  text-decoration: none;
+  color: #F08813;
+}
+
+/* Courses Section */
+
+#courses {
+  background-color: #C8B49E;
+}
+#courses h2, #thesis h2 {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+#courses .flex {
+  margin: 0px 72px;
+  justify-content: center;
+}
+
+.course {
+  margin: 16px;
+  background-color: white;
+  margin-bottom: 32px;
+  min-height: 24rem;
+}
+
+.courseInfo {
+  padding: 1rem 1rem 1.5rem 1rem;
+  box-sizing:border-box;
+}
+
+.courseInfo span {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+#courses .course {
+  max-width: 30.5%;
+}
+
+.course img {
+  max-width: 100%;
+}
+
+/* Thesis Section */
+
+#thesis .leftSide h4 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+#thesis .leftSide span {
+  margin-bottom: 32px;
+}
+
+#thesis .rightSide span {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+/*footer*/
+
+footer {
+  justify-content: space-between;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  border-top: 1px solid grey;
+  background-color: #C8B49E;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media only screen and (max-width: 414px) {
+
+  /* change flex elements to block elements */
+  .flex {
+    display: block;
+  }
+
+  .secContainer {
+    padding: 0;
+  }
+
+  .leftSide {
+    width: 100%;
+    padding: 0;
+  }
+  /*hide desktop and reveal mobile nav features*/
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline-block;
+    height: 100%;
+  }
+
+  header {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+
+  }
+
+  #jumbotron {
+    display: block;
+    padding: 0;
+  }
+
+  .imgContainer {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  #jumbotron h1,#jumbotron h3 {
+    width: calc(100% - 2rem);
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
+  .cta {
+    max-width: 100%;
+  }
+
+  .rightSide {
+    width: 100%;
+
+  }
+
+  #btn {
+    margin: 0.5rem 1rem 2rem 1rem;
+    width: calc(100% - 3rem);
+  }
+
+  /* amend information area settings */
+
+
+  #information .leftSide{
+    display: none;
+  }
+
+  #information {
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .smallContent {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .smallContent .txtContainer {
+    width: 100%;
+  }
+
+  .smallContent:nth-child(1n+2) {
+    padding-top: 64px;
+  }
+
+  .rightSide .imgContainer {
+    width: 100%;
+  }
+
+  .rightSide img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Change Start Learning Section */
+
+  #courses {
+    margin: 1rem 1rem 2rem 1rem;
+    background-color: white;
+  }
+
+  #courses .flex {
+    margin: 0;
+  }
+
+  #courses .course {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+    min-height: 2rem;
+  }
+
+  .courseInfo {
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: #C8B49E;
+    width: 100%;
+  }
+
+  /* Change Thesis Section */
+
+  #thesis .imgContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  #thesis h2 {
+    margin: 2rem 0 1rem 0;
+  }
+
+  /* Footer changes */
+
+  footer {
+    border-top: none;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+
+}
